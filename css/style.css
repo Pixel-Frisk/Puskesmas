@@ -1,0 +1,218 @@
+/* Navbar */
+.menu li img {
+    width: 45px;
+    padding: 3px 30px 0px 35px;
+}
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00ff00;
+    
+}
+
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 20px 16px 17px;
+    text-decoration: none;
+    font-size: 20px;
+	font-weight: bold;
+    border-bottom: 2px solid #00ff00;
+}
+
+ul.menu li a:hover {
+    color: #066A19;
+    background-color: white;
+    border-bottom: 2px solid #066A19;
+}
+
+ul.menu li.icon {
+    display: none;
+}
+
+@media screen and (max-width:786px) {
+
+    ul.menu li:not(:first-child),
+    ul.menu.responsive li img {
+        display: none;
+    }
+
+    ul.menu li.icon {
+        float: right;
+        display: inline-block;
+    }
+
+    ul.menu.responsive {
+        position: relative;
+    }
+
+    ul.menu.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    ul.menu.responsive li {
+        float: none;
+        display: inline;
+    }
+
+    ul.menu li a {
+        display: block;
+        text-align: left;
+    }
+}
+/*beranda section*/
+.beranda {
+	margin-top: 1%;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#besar{
+	margin-top:1%;
+	width: 86%;
+	border: 1px solid black;
+}
+#kecil{
+	float: right;
+    width: 27%;
+	height: 27%;
+    padding-right: 7%;
+}
+.judul{
+	width:90%;
+	text-align: left;
+	padding-left: 7%;
+	font-weight: bold;
+	font-Size: 25px;
+	
+}
+.isi {
+	width: 58%;
+	text-align: justify;
+	font-weight: lighter;
+	line-height: 25px;
+	font-size: 20px;
+	padding-left: 7%;
+}
+/*tentang section*/
+.tentang{
+	margin-top: 15%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
+#sejarah{
+	float: right;
+    width: 450px;
+	height: 450px;
+	padding-top: 1%;
+    padding-right: 3%;
+}
+.judul2{
+	background-color: #B3B3B3;
+	width:90%;
+	text-align: center;
+	font-weight: bold;
+	font-Size: 25px;
+	padding-left:3%;
+	padding-right:7%;
+}
+.isi2 {
+	width: 53%;
+	text-align: justify;
+	font-weight: lighter;
+	line-height: 25px;
+	font-size: 20px;
+	padding-left: 3%;
+}
+/*layanan section*/
+.layanan{
+	background-color: white;
+	margin-left: 5%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
+.judul3{
+	background-color: #00ff00;
+	width:89.8%;
+	text-align: center;
+	font-weight: bold;
+	font-Size: 25px;
+	padding-left:3%;
+	padding-right:2%;
+}
+.gambar {
+	background-color: #e6fff2;
+    width: 29%;
+	margin:1.3%;
+    text-align: center;
+    float: left;
+	padding-top: 1%;
+}
+.gambar img {
+    width: 50%;
+}
+.gambar h2{
+	color: #066A19;
+	font-size: 20px;
+	text-decoration: none;
+}
+.gambar2 {
+    width: 29%;
+	margin:1.3%;
+    text-align: center;
+    float: left;
+	padding-top: 1%;
+}
+.gambar2 img {
+    width: 50%;
+}
+.gambar2 h2{
+	color: #066A19;
+	font-size: 20px;
+	text-decoration: none;
+}
+/*kontak section*/
+.kontak{
+	margin-top: 43%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 0.5%;
+	padding-bottom: 36%;
+}
+.kontak #judul{
+	background-color: #B3B3B3;
+	text-align: center;
+	font-size: 25px;
+}
+.kontak #judul2{
+	text-align:right;
+	padding-right:4%
+}
+label2{
+	font-family: Times New Roman;
+	padding-left:7%;
+}
+label{
+	color:#000000;
+	font-family: Times New Roman;
+	font-weight: bold;
+}
+footer{
+	margin-top:7%;
+	padding-top:1%;
+	padding-left:35px;
+	border-top: 1px solid #000000;
+	position: bottom;
+	color:#066A19;
+}
