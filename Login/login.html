@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Masuk</title>
+	<script src="js/javascript.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <!--Navbar-->
+	<header>
+		<ul class="menu">
+			<li><img src="picture/Logo Puskesmas Baru.png" alt=""></li>
+			<li><a href="index.html">Beranda</a></li>
+			<li class="icon">
+				<a href="javascript:void(0);" onclick="myFunction()">☰</a>
+			</li>
+			<div class="menu">
+			</div>
+		</ul>
+	</header>
+       <div class="content" align="center">
+            <img id="logo" src="picture/Logo Puskesmas Baru.png">
+        </div>
+        <div class="content" align="center" id="back_content">
+            <h1 id="judul">Pendaftaran Pemeriksaan</h1>
+            <form name="login" onsubmit="return validasi()">
+                    <table cellspacing="20">
+                        <tr>
+                            <td><label for="NIK">NIK</label></td>
+                            <td>:</td>
+                            <td><input type="number" name="nik" placeholder="NIK" required=""></td>
+                        </tr>
+                        <tr>
+                            <td><label for="nama_lengkap">Nama</label></td>
+                            <td>:</td>
+                            <td><input type="text" name="nama" placeholder="Nama" required=""></td>
+                        </tr>
+                        <tr>
+                            <td><label for="kelamin">Jenis Pemeriksaan</label></td>
+                            <td>:</td>
+                            <td><select name="pemeriksaan" id="pemeriksaan">
+								<option value="Dokter Umum">Dokter Umum
+								<option value="Dokter Gigi">Dokter Gigi
+								<option value="Dokter Anak">Dokter Anak
+								<option value="Pemeriksaan USG">Pemeriksaan USG
+								<option value="Pemeriksaan LAB">Pemeriksaan LAB
+								<option value="Pemeriksaan Gizi">Pemeriksaan Gizi
+								</select>
+							</td>
+                        </tr>
+							<td></td>
+                            <td></td>
+                            <td align="right"><a href="daftar.html"><input type="submit" value="Daftar" id="button"></a>
+                            <align="right"><input type="submit" value="Selesai" id="button"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+	<footer align="left">
+		<b><font size="+2">Puskesmas Kecamatan Senen</font></b>
+		<p><b>Alamat:</b> Jl. Kramat VII, No. 31, Senen, Jakarta Pusat 10430 - <b>Telp.:</b> (021) 3146194</p>
+		<p><font size="-1">Copyright &copy; 2019 Puskesmas Kecamatan Senin</font></p>
+	</footer>
+	</div>
+	</body>
+</html>
