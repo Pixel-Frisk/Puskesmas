@@ -1,85 +1,69 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Daftar</title>
-		<script src="js/javascript.js"></script>
-		<link href="css/style3.css" rel="stylesheet" type"text/css">
-    </head>    
-	<body>
-    <!--Navbar-->
+<head>
+	<meta charset="utf-8">
+	<title>Daftar</title>
+	<link rel="icon" type="image/png" href="picture/Logo Puskesmas Baru.png">
+	<script src="js/javascript.js"></script>
+	<link href="css/style3.css" rel="stylesheet" type="text/css">
+</head>    
+<body>
+	<!--Navbar-->
 	<header>
 		<ul class="menu">
-			<li><img src="picture/Logo Puskesmas Baru.png" alt=""></li>
+			<a href="index.html"><img id="logo" src="picture/Logo Puskesmas Baru.png">
+			<li id="nama_logo">Puskesmas</li></a>
 			<li><a href="index.html">Beranda</a></li>
-			<li class="icon">
-				<a href="javascript:void(0);" onclick="myFunction()">☰</a>
-			</li>
-			<div class="menu">
 			</div>
 		</ul>
 	</header>
-       <div class="content" align="center">
-            <img id="logo" src="picture/Logo Puskesmas Baru.png">
+	   	<img id="gambar" src="picture/health_well-being_ehealth_healthcare_heartbeat_heart_-512.png">
+       	<div class="content" align="left">
+        <h1 id="judul">Daftar Akun Pasien</h1>
+        <form id="daftar" onsubmit="return validasi2()">
+                <table cellspacing="20">
+                    <tr>
+                        <td><label for="namaa">Nama Lengkap</label></td>
+                        <td><input type="text" name="nama" placeholder="Nama Lengkap" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="alamaat">Alamat</label></td>
+                        <td><input type="text" name="alamat" placeholder="Alamat" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="NIIK">NIK</label></td>
+                        <td><input type="number" name="nik" placeholder="NIK" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="telepoon">Nomor Telepon/HP</label></td>
+                        <td><input type="number" name="telepon" placeholder="Nomor Telepon/HP" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tempat_lahiir">Tempat Lahir</label></td>
+                        <td><input type="text" name="tempat_lahir" placeholder="Tempat Lahir" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tanggal_lahiir">Tanggal Lahir</label></td>
+                        <td><input type="date" name="tanggal_lahir" id="birth" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="kelamiin">Jenis Kelamin</label></td>
+                        <td><select name="kelamin" id="kelamin">					
+								<option value="Laki-Laki">Laki-Laki</option>					
+								<option value="Perempuan">Perempuan</option>					
+							</select>				
+						</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="right"><a href="login.html"><input type="button" class="tombol" value="Kembali"></a>
+                        <input type="submit" class="tombol" value="Selesai" id="button" ></td>
+                    </tr>
+                </table>
+            </form>
         </div>
-        <div class="content" align="center" id="back_content">
-            <h1 id="judul">Daftar Akun Pasien</h1>
-            <form name="daftar" onsubmit="return validasi2()">
-                    <table cellspacing="20">
-                        <tr>
-                            <td><label for="namaa">Nama Lengkap</label></td>
-                            <td>:</td>
-                            <td><input type="text" name="nama" placeholder="Nama Lengkap" required=""></td>
-							<td><name "nama"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="alamaat">Alamat</label></td>
-                            <td>:</td>
-                            <td><input type="text" name="alamat" placeholder="Alamat" required=""></td>
-                        </tr>
-                        <tr>
-                            <td><label for="NIIK">NIK</label></td>
-                            <td>:</td>
-                            <td><input type="number" name="nik" placeholder="NIK" required=""></td>
-                        </tr>
-                        <tr>
-                            <td><label for="telepoon">Nomor Telepon/HP</label></td>
-                            <td>:</td>
-                            <td><input type="number" name="telepon" placeholder="Nomor Telepon/HP" required=""></td>
-                        </tr>
-                        <tr>
-                            <td><label for="tempat_lahiir">Tempat Lahir</label></td>
-                            <td>:</td>
-                            <td><input type="text" name="tempat_lahir" placeholder="Tempat Lahir" required=""></td>
-                        </tr>
-                        <tr>
-                            <td><label for="tanggal_lahiir">Tanggal Lahir</label></td>
-                            <td>:</td>
-                            <td><input type="date" name="tanggal_lahir" id="birth" required=""></td>
-                        </tr>
-                        <tr>
-                            <td><label for="kelamiin">Jenis Kelamin</label></td>
-                            <td>:</td>
-                            <td><select name="kelamin" id="kelamin">
-								<option value="Laki-Laki">Laki-Laki
-								<option value="Perempuan">Perempuan
-								</select>
-							</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td align="right"><input type="submit" value="Selesai" id="button"></td>
-                        </tr>
-                    </table>
-                </form>
-            </div>
-        </div>
-  		<footer>
-			<b><font size="+2">Puskesmas Kecamatan Senen</font></b>
-			<p><b>Alamat:</b> Jl. Kramat VII, No. 31, Senen, Jakarta Pusat 10430 - <b>Telp.:</b> (021) 3146194</p>
-			<p><font size="-1">Copyright &copy; 2019 Puskesmas Kecamatan Senin</font></p>
-		</footer>
-		</div>
+	<footer>
+		<p><font size="-1">Copyright &copy; 2019 Puskesmas Kecamatan Senin</font></p>
+	</footer>
 	</body>
 </html>

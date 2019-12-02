@@ -3,24 +3,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Puskesmas Kecamatan Senen</title>
-	<script src="js/javascript.js"></script>
+	<link rel="icon" type="image/png" href="picture/Logo Puskesmas Baru.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--Navbar-->
 	<header>
 		<ul class="menu">
-			<li><img src="picture/Logo Puskesmas Baru.png" alt=""></li>
-			<li><a href="#beranda">Beranda</a></li>
-			<li><a href="#tentang">Tentang Kami</a></li>
-			<li><a href="#layanan">Layanan</a></li>
-			<li><a href="#kontak">Kontak</a></li>
-			<li><a href="login.html">Login/Daftar</a></li>
-			<li class="icon">
-				<a href="javascript:void(0);" onclick="myFunction()">☰</a>
-			</li>
-			<div class="menu">
-			</div>
+			<img id="logo" src="picture/Logo Puskesmas Baru.png">
+			<li id="nama_logo">Puskesmas Kecamatan Senen</li>
+			<li><a id="masuk" href="login.html">Masuk</a></li>
+			<li><a href="#kontak" class="scroll">Kontak</a></li>
+			<li><a href="#layanan" class="scroll">Layanan</a></li>
+			<li><a href="#tentang" class="scroll">Sejarah</a></li>
+			<li><a href="#beranda" class="scroll">Beranda</a></li>
 		</ul>
 	</header>
 	<!-- Beranda Section -->
@@ -60,28 +56,34 @@
 		<h1 class="judul3">Layanan Puskesmas kecamatan Senen</h1>
 		<div class="gambar">
 			<img src="picture/Dokter umum.png"><h2>Dokter Umum</h2>
+			<h3>Melayani pengobatan - pengobatan umum</h3>
 		</div>
 		<div class="gambar2">
 			<img src="picture/gigi.png"><h2>Dokter Gigi</h2>
+			<h3>Memberikan pelayanan kesehatan gigi</h3>
 		</div>
 		<div class="gambar">
         	<img src="picture/persalinan.png"><h2>Dokter Anak</h2>
+			<h3>Pelayanan Kesehatan Ibu dan Anak, termasuk pelayanan Keluarga Berencana</h3>
 		</div>
 		<div class="gambar2">
 			<img src="picture/usg.png"><h2>Pemeriksaan USG</h2>
+			<h3>Pelayanan untuk pemeriksaan kehamilan</h3>
 		</div>
 		<div class="gambar">
 			<img src="picture/lab.png"><h2>Pemeriksaan LAB</h2>
+			<h3>Pemeriksaan Laboratorium</h3>
 		</div>
 		<div class="gambar2">
 			<img src="picture/gizi.png"><h2>Pemeriksaan Gizi</h2>
+			<h3>Memberikan pemeriksaan dan konsultasi gizi</h3>
 		</div>
 	</section>
 	<section class="kontak" id="kontak">
     	<h1 id="judul">Kontak Kami</h1>
 		<h2 id="judul2" align="right">Hubungi Kami</h2>
         <div class="form_warp">
-                <form id="alamat" name='kontak' method="post">
+                <form id="alamat" name="kontak" method="post">
 					<table align="left" cellspacing="30">
 					 	<tr>
 							<td><font size="+2"><label2><b>ALAMAT</b>:</label2></font></td>
@@ -99,7 +101,7 @@
 							<td><font size="+2"><label2><b>TELEPON</b>:</label2></font></td>
 						</tr>
 						<tr>
-							<td><label2><font size="+1">(021)3146194</label2></font></td>
+							<td><label2><font size="+1">(021)3146194</font></label2></td>
 						</tr>
 						<tr>
 							<td><font size="+2"><label2><b>EMAIL</b>:</label2></font></td>
@@ -113,10 +115,9 @@
 					</table>
                     <table align="right" cellspacing="30">
 						<tr>
-                            <td align:"right"><label for="nama">Nama </label></td>
+                            <td><label for="nama">Nama </label></td>
                             <td>:</td>
                             <td><input type="text" name="nama" placeholder="Nama Lengkap"></td>
-							<td><name "nama"></td>
                         </tr>
                         <tr>
                             <td><label for="hp">No.HP</label></td>
@@ -131,7 +132,7 @@
                         <tr>
                             <td><label for="perihal">Perihal</label></td>
                             <td>:</td>
-                            <td><input type="text" name="perihal" placeholder="Perihal"></input></td>
+                            <td><input type="text" name="perihal" placeholder="Perihal"></td>
                         </tr>
                         <tr>
                             <td><label for="isi">Isi Pesan</label></td>
@@ -148,9 +149,34 @@
             </div>
 	</section>
 	<footer>
-		<b><font size="+2">Puskesmas Kecamatan Senen</font></b>
-		<p><b>Alamat:</b> Jl. Kramat VII, No. 31, Senen, Jakarta Pusat 10430 - <b>Telp.:</b> (021) 3146194</p>
-		<p><font size="-1">Copyright &copy; 2019 Puskesmas Kecamatan Senin</font></p>
+		<p><font size="-1">Copyright &copy; 2019 Puskesmas Kecamatan Senen</font></p>
 	</footer>
 </body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </html>

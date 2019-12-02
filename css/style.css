@@ -1,26 +1,40 @@
-/* Navbar */
-.menu li img {
-    width: 45px;
-    padding: 3px 30px 0px 35px;
+/*Navigasi*/
+#logo{
+    width: 50px;
+	height: 61px;
+	margin-left:0px;
+	mergin-right:0px;
+	float:left;
 }
+
+#nama_logo{
+	float:left;
+    padding: 20px 17px 17px 0px;
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+}
+
 ul.menu {
+	width:93%;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-right: 3%;
     overflow: hidden;
     background-color: #00ff00;
-    
+	border-radius: 2px;
+	position:fixed;
 }
 
 ul.menu li {
-    float: left;
+    float: right;
 }
 
 ul.menu li a {
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 20px 16px 17px;
+    padding: 20px 17px 17px ;
     text-decoration: none;
     font-size: 20px;
 	font-weight: bold;
@@ -32,46 +46,12 @@ ul.menu li a:hover {
     background-color: white;
     border-bottom: 2px solid #066A19;
 }
-
-ul.menu li.icon {
-    display: none;
-}
-
-@media screen and (max-width:786px) {
-
-    ul.menu li:not(:first-child),
-    ul.menu.responsive li img {
-        display: none;
-    }
-
-    ul.menu li.icon {
-        float: right;
-        display: inline-block;
-    }
-
-    ul.menu.responsive {
-        position: relative;
-    }
-
-    ul.menu.responsive li.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    ul.menu.responsive li {
-        float: none;
-        display: inline;
-    }
-
-    ul.menu li a {
-        display: block;
-        text-align: left;
-    }
+#masuk{
+	margin-left:210px
 }
 /*beranda section*/
 .beranda {
-	margin-top: 1%;
+	padding-top:6.5%;
 	width:100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -83,8 +63,8 @@ ul.menu li.icon {
 }
 #kecil{
 	float: right;
-    width: 27%;
-	height: 27%;
+    width: 23%;
+	height: 23%;
     padding-right: 7%;
 }
 .judul{
@@ -105,10 +85,10 @@ ul.menu li.icon {
 }
 /*tentang section*/
 .tentang{
-	margin-top: 15%;
+	margin-top: 7.1%;
 	margin-left: 5%;
 	margin-right: 5%;
-	padding-top: 0.5%;
+	padding-top: 5%;
 	padding-bottom: 0.5%;
 }
 #sejarah{
@@ -116,7 +96,7 @@ ul.menu li.icon {
     width: 450px;
 	height: 450px;
 	padding-top: 1%;
-    padding-right: 3%;
+    padding-right: 2%;
 }
 .judul2{
 	background-color: #B3B3B3;
@@ -137,9 +117,9 @@ ul.menu li.icon {
 }
 /*layanan section*/
 .layanan{
-	background-color: white;
 	margin-left: 5%;
-	padding-top: 0.5%;
+	margin-top: 0%;
+	padding-top:5.4%;
 	padding-bottom: 0.5%;
 }
 .judul3{
@@ -167,6 +147,10 @@ ul.menu li.icon {
 	font-size: 20px;
 	text-decoration: none;
 }
+.gambar h3{
+	font-size: 15px;
+	text-decoration: none;
+}
 .gambar2 {
     width: 29%;
 	margin:1.3%;
@@ -182,12 +166,16 @@ ul.menu li.icon {
 	font-size: 20px;
 	text-decoration: none;
 }
+.gambar2 h3{
+	font-size: 15px;
+	text-decoration: none;
+}
 /*kontak section*/
 .kontak{
-	margin-top: 43%;
+	margin-top: 49.8%;
 	margin-left: 5%;
 	margin-right: 5%;
-	padding-top: 0.5%;
+	padding-top: 5.4%;
 	padding-bottom: 36%;
 }
 .kontak #judul{
@@ -209,8 +197,7 @@ label{
 	font-weight: bold;
 }
 footer{
-	margin-top:7%;
-	padding-top:1%;
+	margin-top:6%;
 	padding-left:35px;
 	border-top: 1px solid #000000;
 	position: bottom;

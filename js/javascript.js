@@ -1,7 +1,3 @@
-function myFunction() {
-document.getElementsByClassName("menu")[0].classList.toggle("responsive");
-}
-
 function validasi() {
 	var nik = document.forms["login"]["nik"].value;
     var nama = document.forms["login"]["nama"].value;
